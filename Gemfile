@@ -13,6 +13,7 @@ group :development, :test do
   gem 'spork-rails', git: 'https://github.com/sporkrb/spork-rails.git'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 group :test do
