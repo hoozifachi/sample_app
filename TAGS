@@ -1,0 +1,63 @@
+
+app/assets/javascripts/application.js,0
+
+app/controllers/application_controller.rb,79
+class ApplicationController < ActionController::BaseApplicationController1,0
+
+app/controllers/sessions_controller.rb,145
+class SessionsController < ApplicationControllerSessionsController1,0
+  def newnew3,50
+  def createcreate6,69
+  def destroydestroy17,363
+
+app/controllers/static_pages_controller.rb,172
+class StaticPagesController < ApplicationControllerStaticPagesController1,0
+  def homehome2,52
+  def helphelp5,70
+  def aboutabout8,88
+  def contactcontact11,107
+
+app/controllers/users_controller.rb,405
+class UsersController < ApplicationControllerUsersController1,0
+  def indexindex6,215
+  def showshow10,282
+  def newnew14,335
+  def createcreate18,373
+  def editedit29,578
+  def updateupdate32,596
+  def destroydestroy42,783
+    def user_paramsuser_params50,918
+    def signed_in_usersigned_in_user57,1093
+    def correct_usercorrect_user62,1220
+    def admin_useradmin_user67,1343
+
+app/helpers/application_helper.rb,92
+module ApplicationHelperApplicationHelper1,0
+  def full_title(page_title)full_title4,74
+
+app/helpers/sessions_helper.rb,372
+module SessionsHelperSessionsHelper1,0
+  def sign_in(user)sign_in3,23
+  def signed_in?signed_in?10,253
+  def current_user=(user)current_user=14,300
+  def current_usercurrent_user18,358
+  def current_user?(user)current_user?23,511
+  def sign_outsign_out27,569
+  def redirect_back_or(default)redirect_back_or32,655
+  def store_locationstore_location37,773
+
+app/helpers/static_pages_helper.rb,47
+module StaticPagesHelperStaticPagesHelper1,0
+
+app/helpers/users_helper.rb,102
+module UsersHelperUsersHelper1,0
+  def gravatar_for(user, options = { size: 50 })gravatar_for4,88
+
+app/models/micropost.rb,51
+class Micropost < ActiveRecord::BaseMicropost1,0
+
+app/models/user.rb,197
+class User < ActiveRecord::BaseUser1,0
+  def User.new_remember_tokennew_remember_token13,457
+  def User.encrypt(token)encrypt17,526
+    def create_remember_tokencreate_remember_token23,611
