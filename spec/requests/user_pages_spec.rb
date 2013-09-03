@@ -65,6 +65,25 @@ describe "User pages" do
       it { should have_content(m2.content) }
       it { should have_content(user.microposts.count) }
     end
+
+    describe "follow/unfollow buttons" do
+      let(:other_user) { FactoryGirl.create(:user) }
+      before { sign_in user }
+
+      describe "following a user" do
+        before { visit user_path(other_user) }
+
+        it "should increment the following user count" do
+          expect do
+            click_button "Follow"
+          end.to change(user.followed_users, :count).by(1)
+        end
+
+        it "should increment the other user's followers count" do
+          # TODO
+        end
+      end
+    end
   end
 
   describe "signup page" do
